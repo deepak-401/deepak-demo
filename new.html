@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1> Hi,  I'm <span>Deepak</span><br>From Berhampur</h1>
+            </div>
+        </div>
+    </div>
+   <!-------about  -------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="man.png" >
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <h4>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature<br> team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</h4>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"Exprience onclick="opentab('exprience')">Exprience</p>
+                    <p class="tab-links"Education onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Desigining web</li>
+                        <li><span>Web Developement</span><br> web app Developement</li>
+                        <li><span>App Developement</span><br>Android/ios Developement</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exprience">
+                    <ul>
+                        <li><span>2022-23</span><br>Desigining web training</li>
+                        <li><span>2021-22</span><br> Working in Freelancer as a front end Developer</li>
+                        <li><span>2021-22</span><br>Internship at Tequed Lab </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>B.tech from VTU University</li>
+                        <li><span>2019</span><br> 12th from Osmania High Madrasha</li>
+                        <li><span>2017</span><br> 10th from Bani Hari High School</li>
+                        
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+    }
+
+
+    
+</script>
+</body>
+    
+
+</html>
